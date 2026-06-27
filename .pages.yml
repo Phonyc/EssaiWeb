@@ -1,5 +1,18 @@
 media: assets/images
 content:
+  - name: categories
+    label: Catégories
+    type: collection
+    path: _categories
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label:
+          Nom de la catégorie
+        type: string
+        required: true
+
+
   - name: posts
     label: Posts
     type: collection
@@ -10,6 +23,17 @@ content:
         label: Titre
         type: string
         required: true
+
+      - name: category
+        label: Catégorie
+        type: reference
+        options:
+          collection: categories
+          search: [ fields.title ]
+          label: "{fields.title}"
+          value: "{fields.title}"
+        required: true
+
       - name: date
         label: Date
         type: date

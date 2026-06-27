@@ -1,2 +1,3 @@
 title: "Titre"
+permalink: /:categories/:year-:month-:day-:title/
 exclude: [".pages.yml", "Gemfile", "Gemfile.lock", "vendor"]
