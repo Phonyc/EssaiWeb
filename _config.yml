@@ -1,0 +1,2 @@
+title: "Titre"
+exclude: [".pages.yml", "Gemfile", "Gemfile.lock", "vendor"]
